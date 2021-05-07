@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <title>Stock Profile</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="static/bootstrap.min.css" rel="stylesheet" media="screen">
+  </head>
+  <body>
+    <div class="container">
+      <p><i>Input:</i></p>
+      <form action="" method="post">
+        <label>Please enter a symbol: </label>
+        <input type="text" placeholder="Stock Symbol " name="symbol" value="{{
+          request.form.symbol }}">
+        <input class="btn btn-default" type="submit" value="Submit">
+      </form>
+      <p><i>Output:</i></p>
+      {% if error %}
+          {{ error }}
+      {% endif %}
+
+      {% if time_info %}
+        {{ time_info }}
+      {% endif %}
+      <br>
+      <br>
+      {% if name_info %}
+        {{ name_info }}
+      {% endif %}
+      <br>
+      <br>
+
+      {% if prince_info %}
+        {{ prince_info }}
+      {% endif %}
+    </div>
+  </body>
+</html>
