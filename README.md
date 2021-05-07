@@ -7,4 +7,4 @@ flask run
 ```
 
 https://stock-yuxin-zhou.herokuapp.com/
-![Screenshot]](screenshot.png)
+![Screenshot](screenshot.png)
